@@ -1,16 +1,3 @@
-let greetingText = "Hi, I'm Ira";
-let ages = 29;
-let hobby = ["swimming", "walking", "cardio"];
-let job = { title: "Developer", Place: "New York", Salary: 50000 };
-ages = 42;
-alert(hobby[0]);
-alert(job.Place);
+document.body.children[1].children[0].href = "https://www.google.com/";
 
-let adultYears;
-
-function calculateAdultAges(userAges) {
-  return userAges - 18;
-}
-adultYears = calculateAdultAges(ages);
-
-alert(adultYears);
+// console.dir(document);
