@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Advanced</title>
-    <script src="domExcercise.js" defer></script>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="demo.js" defer></script>
   </head>
   <body>
-    <h1 id="h1Element">Hi there!</h1>
-    <p>This is new!</p>
-    <p class="secondParagraphText">
-      This is a
-      <a href="#">link</a>
-    </p>
+    <form>
+      <div class="control">
+        <label for="product-name">Product Name</label>
+        <input
+          type="text"
+          name="product-name"
+          id="product-name"
+          maxlength="60"
+        />
+        <span id="charCount"> 
+          <span id="remainChars"> 60 </span> /60 
+        </span>
+      </div>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
