@@ -1,16 +1,25 @@
-let greetingText = "Hi, I'm Ira";
-let ages = 29;
-let hobby = ["swimming", "walking", "cardio"];
-let job = { title: "Developer", Place: "New York", Salary: 50000 };
-ages = 42;
-alert(hobby[0]);
-alert(job.Place);
+let firstParagraph = document.body.firstElementChild;
 
-let adultYears;
+// console.log(firstParagraph);
 
-function calculateAdultAges(userAges) {
-  return userAges - 18;
+function changeParagraphText() {
+  firstParagraph.textContent = "Clicked!";
+  console.log(firstParagraph);
 }
-adultYears = calculateAdultAges(ages);
 
-alert(adultYears);
+firstParagraph.addEventListener("click", changeParagraphText);
+
+// define input
+
+let firstInput = document.body.children[1];
+console.log(firstInput);
+
+function getUserInput(event) {
+  //   let enterText = firstInput.value;
+  let enterText = event.target.value;
+  //   let enterText = event.data;
+  console.log(enterText);
+  //   console.log(event);
+}
+
+firstInput.addEventListener("input", getUserInput);
